@@ -4,10 +4,10 @@ export const ValorantSlice = createSlice({
   name: "ValorantSlice",
   initialState: { agents: [] },
   reducers: {
-    getAgents: (state, { payload }) => {
+    setAgents: (state, { payload }) => {
       state.agents = payload;
     },
   },
 });
 
-export const { getAgents } = ValorantSlice.actions;
+export const { setAgents } = ValorantSlice.actions;
